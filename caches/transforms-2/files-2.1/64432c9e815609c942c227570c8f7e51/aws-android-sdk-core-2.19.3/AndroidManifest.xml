@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amazonaws"
+    android:versionCode="21903"
+    android:versionName="2.19.3" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="29" />
+
+    <application>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashPageFragment2">
+
+    <fragment
+        android:id="@+id/splashPageFragment2"
+        android:name="com.nugrs.pointeproductsapp.SplashPageFragment"
+        android:label="fragment_splash_page"
+        tools:layout="@layout/fragment_splash_page" >
+        <action
+            android:id="@+id/action_splashPageFragment2_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.nugrs.pointeproductsapp.HomePage"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_homePage_to_product1"
+            app:destination="@id/product1" />
+    </fragment>
+    <fragment
+        android:id="@+id/product1"
+        android:name="com.nugrs.pointeproductsapp.Product1"
+        android:label="fragment_product1"
+        tools:layout="@layout/fragment_product1" >
+        <action
+            android:id="@+id/action_product1_to_homePage"
+            app:destination="@id/homePage" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="productName"
+            app:argType="string" />
+        <argument
+            android:name="productPrice"
+            app:argType="string" />
+        <argument
+            android:name="productDescription"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_product1_to_purchaseCheck"
+            app:destination="@id/purchaseCheck" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseCheck"
+        android:name="com.nugrs.pointeproductsapp.PurchaseCheck"
+        android:label="fragment_purchase_check"
+        tools:layout="@layout/fragment_purchase_check" >
+        <action
+            android:id="@+id/action_purchaseCheck_to_secureCheckout"
+            app:destination="@id/secureCheckout" />
+    </fragment>
+    <fragment
+        android:id="@+id/secureCheckout"
+        android:name="com.nugrs.pointeproductsapp.SecureCheckout"
+        android:label="fragment_secure_checkout"
+        tools:layout="@layout/fragment_secure_checkout" >
+        <action
+            android:id="@+id/action_secureCheckout_to_activityPayment"
+            app:destination="@id/activityPayment" />
+        <action
+            android:id="@+id/action_secureCheckout_to_existingCustomerPayment"
+            app:destination="@id/existingCustomerPayment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="line1"
+            app:argType="string" />
+        <argument
+            android:name="line2"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="state"
+            app:argType="string" />
+        <argument
+            android:name="postal_code"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_secureCheckout_to_createCustomer"
+            app:destination="@id/createCustomer" />
+    </fragment>
+    <activity
+        android:id="@+id/activityPayment"
+        android:name="com.nugrs.pointeproductsapp.ActivityPayment"
+        android:label="activity_payment"
+        tools:layout="@layout/activity_payment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="line1"
+            app:argType="string" />
+        <argument
+            android:name="line2"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="state"
+            app:argType="string" />
+        <argument
+            android:name="postal_code"
+            app:argType="string" />
+    </activity>
+    <activity
+        android:id="@+id/existingCustomerPayment"
+        android:name="com.nugrs.pointeproductsapp.ExistingCustomerPayment"
+        android:label="activity_existing_customer_payment"
+        tools:layout="@layout/activity_existing_customer_payment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="line1"
+            app:argType="string" />
+        <argument
+            android:name="line2"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="state"
+            app:argType="string" />
+        <argument
+            android:name="postal_code"
+            app:argType="string" />
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <argument
+            android:name="nameShipping"
+            app:argType="string" />
+        <argument
+            android:name="line1Shipping"
+            app:argType="string" />
+        <argument
+            android:name="line2Shipping"
+            app:argType="string" />
+        <argument
+            android:name="cityShipping"
+            app:argType="string" />
+        <argument
+            android:name="stateShipping"
+            app:argType="string" />
+        <argument
+            android:name="postal_codeShipping"
+            app:argType="string" />
+    </activity>
+    <activity
+        android:id="@+id/createCustomer"
+        android:name="com.nugrs.pointeproductsapp.CreateCustomer"
+        android:label="CreateCustomer" />
+</navigation>

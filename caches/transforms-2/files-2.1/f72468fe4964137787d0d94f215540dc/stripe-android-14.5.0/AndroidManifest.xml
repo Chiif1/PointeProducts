@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stripe.android"
+    android:versionCode="104"
+    android:versionName="14.5.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="29" />
+
+    <application>
+        <activity
+            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentMethodsActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentFlowActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentRelayActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+            android:theme="@style/StripeDefaultTheme" />
+    </application>
+
+</manifest>

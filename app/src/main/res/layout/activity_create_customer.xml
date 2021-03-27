@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ExistingCustomerPayment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/nameCreateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/nameTxBoxCreateCustomer"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="TestFirstName"/>
+
+            <TextView
+                android:id="@+id/createCustomerAddress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address 1"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/addressTxBoxCreateCustomer1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TestAddress"/>
+
+            <TextView
+                android:id="@+id/createCustomerAddress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address 2"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/addressTxBoxCreateCustomer2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TestAddress2"/>
+
+            <TextView
+                android:id="@+id/cityCreateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/cityTxBoxCreateCustomer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TestCity"/>
+
+            <TextView
+                android:id="@+id/stateCraeateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/stateTxBoxCraeteCustomer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TS"/>
+
+            <TextView
+                android:id="@+id/zipcodeCreateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zipcode"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/zipcodeTxBoxCreateCustomer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TestZipc"/>
+
+            <TextView
+                android:id="@+id/phoneCreateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/phoneTxBoxCreateCustomer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TestPhone"/>
+
+            <TextView
+                android:id="@+id/emailCreateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/emailTxBoxCreateCustomer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="e@gmail.com"/>
+
+            <TextView
+                android:id="@+id/shippingCreateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping Address:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/nameShippingCreateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/nameShippingTxBoxCreateCustomer"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="TestReceiptNameShipping"/>
+
+            <TextView
+                android:id="@+id/addressShippingCreateCustomer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/addressTxBoxShippingCreateCustomer1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="ShippinTestAddress"/>
+
+            <TextView
+                android:id="@+id/addressCityCreateCustomerShipping2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address2"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/addressTxBoxCreateCustomerShipping2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TestAddressShippin"/>
+
+            <TextView
+                android:id="@+id/cityCreateCustomerShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/cityTxBoxCreateCustomerShipping"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TestCityShippin"/>
+
+            <TextView
+                android:id="@+id/stateCreateCustomerShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="state"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/stateTxBoxShippingCreateCustomer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="ST" />
+
+            <TextView
+                android:id="@+id/zipcodeCreateCustomerShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zipcode"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/zipcodeTxBoxCreateCustomerShipping"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Shippin" />
+
+            <Button
+                android:id="@+id/payNowCreateCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="{Create Customer"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

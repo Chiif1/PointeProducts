@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amazonaws.mobileconnectors.cognitoauth"
+    android:versionCode="21903"
+    android:versionName="2.19.3" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29" />
+
+    <application>
+        <activity
+            android:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsManagerActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

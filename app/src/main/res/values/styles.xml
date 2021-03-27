@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="productHolderFormat">
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="productImagesFormat">
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_width">120dp</item>
+    </style>
+
+    <style name="productNameFormat">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+
+    <style name="productPriceFormat">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="productNamePurchaseFormat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+
+    <style name="productImagePurchaseFormat">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+    <style name="productPricePurchaseFormat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+    </style>
+
+
+    <style name="purchaseButtonFormat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name ="android:layout_marginBottom">20dp</item>
+        <item name="android:text">"Add To Cart"</item>
+    </style>
+
+    <style name="checkOutButtonFormat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25dp</item>
+        <item name ="android:layout_marginBottom">20dp</item>
+        <item name="android:text">Check Out</item>
+    </style>
+
+    <style name="descriptionPurchaseFormat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:text">"This is the Decription of product one /n The newest product"
+        </item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+</resources>

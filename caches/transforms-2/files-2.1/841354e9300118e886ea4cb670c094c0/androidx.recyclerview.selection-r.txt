@@ -1,0 +1,2 @@
+androidx.recyclerview.selection
+drawable selection_band_overlay

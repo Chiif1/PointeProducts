@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amazonaws.mobile.auth.core"
+    android:versionCode="21903"
+    android:versionName="2.19.3" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="29" />
+
+</manifest>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XHomePage"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:id="@+id/XHomePage"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/XcompanyName"
+        android:text="Pointe Products"
+        android:textSize="20dp"/>
+
+    <View
+        android:layout_height="5dp"
+        android:layout_width="match_parent"
+        android:id="@+id/Xline1"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/XtagLine"
+        android:gravity="center_horizontal"
+        android:textSize="40dp"
+        android:text="Top Brands By"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/XtagLine2"
+        android:gravity="center_horizontal"
+        android:text="Pointe Products"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/XscrollView1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/XlinearLayoutScroll">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/XproductHolder1"
+                style="@style/productHolderFormat">
+
+                <ImageView
+                    android:id="@+id/XImage1"
+                    style="@style/productImagesFormat"/>
+
+                <TextView
+                    style="@style/productNameFormat"
+                    android:id="@+id/productName1"
+                    android:layout_below="@id/XImage1"
+                    android:text="Product1 Name1"/>
+
+                <TextView
+                    android:id="@+id/XproductPrice1"
+                    style="@style/productPriceFormat"
+                    android:layout_below="@id/productName1"
+                    android:text="product price"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/XproductHolder2"
+                android:layout_below="@id/XproductHolder1"
+                style="@style/productHolderFormat">
+
+                <ImageView
+                    android:id="@+id/XImage2"
+                    style="@style/productImagesFormat"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[11]" />
+
+                <TextView
+                    style="@style/productNameFormat"
+                    android:id="@+id/productName2"
+                    android:layout_below="@id/XImage2"
+                    android:text="Product2 Name"/>
+
+                <TextView
+                    android:id="@+id/XproductPrice2"
+                    style="@style/productPriceFormat"
+                    android:layout_below="@id/productName2"
+                    android:text="product price"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/XproductHolder3"
+                android:layout_below="@id/XproductHolder2"
+                style="@style/productHolderFormat">
+
+                <ImageView
+                    android:id="@+id/XImage3"
+                    style="@style/productImagesFormat"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[8]" />
+
+                <TextView
+                    style="@style/productNameFormat"
+                    android:id="@+id/XproductName3"
+                    android:layout_below="@id/XImage3"
+                    android:text="Product3 Name"/>
+
+                <TextView
+                    android:id="@+id/XproductPrice3"
+                    style="@style/productPriceFormat"
+                    android:layout_below="@id/XproductName3"
+                    android:text="product price"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

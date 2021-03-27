@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XGuestUserPayment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/XfirstNameGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/XfirstNameTxBoxGuest"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/XfirstNameGuest"
+                android:text="TestFirstName"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/XlastNameGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="20dp"
+                android:layout_below="@+id/XfirstNameTxBoxGuest"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/XLastNameTxBoxGuest"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/XlastNameGuest"
+                android:text="TestLastName"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/XemailAddressGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/XLastNameTxBoxGuest"/>
+
+            <EditText
+                android:id="@+id/XemailTxBoxGuest"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/XemailAddressGuest"
+                android:layout_marginBottom="20dp"
+                android:text="test@aol.com"/>
+
+
+            <TextView
+                android:id="@+id/XshippingGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping Address:"
+                android:textSize="20dp"
+                android:layout_below="@id/XemailTxBoxGuest"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/XnameRecipientGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20dp"
+                android:layout_below="@+id/XshippingGuest"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/XnameRecipientGuesShippingTxBox"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/XnameRecipientGuest"
+                android:text="TestReceiptName"/>
+
+            <TextView
+                android:id="@+id/XaddressGuestShipping1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address1"
+                android:textColor="@color/black"
+                android:layout_below="@id/XnameRecipientGuesShippingTxBox" />
+
+            <EditText
+                android:id="@+id/XaddressTxGuestShipping1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/XaddressGuestShipping1"
+                android:text="TestAddress"/>
+
+            <TextView
+                android:id="@+id/XaddressGuestShipping2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address2"
+                android:textColor="@color/black"
+                android:layout_below="@id/XaddressTxGuestShipping1" />
+
+            <EditText
+                android:id="@+id/XaddressTxBoxGuestShipping2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/XaddressGuestShipping2"
+                android:text="TestAddress"/>
+
+            <TextView
+                android:id="@+id/XcityGuestShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:textColor="@color/black"
+                android:layout_below="@id/XaddressTxBoxGuestShipping2" />
+
+            <EditText
+                android:id="@+id/XcityTxBoxGuestShipping"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/XcityGuestShipping"
+                android:text="TestCity"/>
+
+            <TextView
+                android:id="@+id/XstateGuestShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="state"
+                android:textColor="@color/black"
+                android:layout_below="@id/XcityTxBoxGuestShipping" />
+
+            <EditText
+                android:id="@+id/XstateTxBoxGuestShipping"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/XstateGuestShipping"
+                android:text="TestState" />
+
+            <TextView
+                android:id="@+id/XzipcodeGuestShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zipcode"
+                android:textColor="@color/black"
+                android:layout_below="@id/XstateTxBoxGuestShipping" />
+
+            <EditText
+                android:id="@+id/XzipcodeTxBoxGuestShipping"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/XzipcodeGuestShipping"
+                android:text="TestZipcode" />
+
+
+            <LinearLayout
+                android:id="@+id/XguestHolderShipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/XzipcodeTxBoxGuestShipping">
+
+                <TextView
+                    android:id="@+id/XcheckBoxText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Account With Guest Information"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <com.stripe.android.view.CardInputWidget
+                android:id="@+id/XcardInputWidgetGuest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/XguestHolderShipping"/>
+
+
+            <Button
+                android:text="Pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/XpayButtonGuest"
+                android:layout_below="@id/XcardInputWidgetGuest"
+                android:layout_marginTop="50dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

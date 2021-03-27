@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stripe.android.stripe3ds2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="29" />
+
+    <application>
+        <activity
+            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+            android:theme="@style/Stripe3DS2Theme" />
+        <activity
+            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity"
+            android:theme="@style/Stripe3DS2Theme" />
+    </application>
+
+</manifest>

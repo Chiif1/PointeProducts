@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_items"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productHolder1List"
+        style="@style/productHolderFormat">
+
+        <ImageView
+            android:id="@+id/Image1"
+            android:src="@mipmap/ic_launcher"
+            style="@style/productImagesFormat"/>
+
+        <TextView
+            style="@style/productNameFormat"
+            android:id="@+id/productName1"
+            android:layout_below="@id/Image1"
+            android:text="Product1 Name1"/>
+
+        <TextView
+            android:id="@+id/productPrice1"
+            style="@style/productPriceFormat"
+            android:layout_below="@id/productName1"
+            android:text="product price"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
